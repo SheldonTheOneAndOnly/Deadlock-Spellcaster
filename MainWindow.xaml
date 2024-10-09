@@ -1,0 +1,63 @@
+﻿<Window x:Class="Spellcaster.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spellcaster"
+        mc:Ignorable="d"
+        Title="Deadlock Spellcaster" Height="450" Width="750" MinWidth="450" MinHeight="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Background="#3d332d" Grid.Row="0" Grid.ColumnSpan="2">
+            <Viewbox Margin="4px">
+                <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48px" FontFamily="Times New Roman" FontWeight="Bold" Foreground="Beige">Deadlock Spellcaster</Label>
+            </Viewbox>
+        </Grid>
+
+        <Grid Background="#403a35" Grid.Row="1" Grid.ColumnSpan="2"> <!--Submenu-->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.5*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1.5*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+        <Grid Grid.Row="2" Background="#615d55">
+            
+        </Grid>
+
+        <ScrollViewer Grid.Row="2" Grid.Column="1" Background="#1f1d1a" HorizontalContentAlignment="Left">
+            <WrapPanel Orientation="Horizontal">
+                <Border Width="192px" Height="144px" Margin="16px" Background="#12110f" CornerRadius="8">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="4*"/>
+                            <RowDefinition Height="1*"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid Background="#302e28" Grid.Row="1">
+                            <Label Foreground="White" FontFamily="Times New Roman">Mod that you can install</Label>
+                        </Grid>
+                    </Grid>
+                </Border>
+            </WrapPanel>
+        </ScrollViewer>
+
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" Background="#2e2d2b">
+            
+        </Grid>
+    </Grid>
+</Window>
